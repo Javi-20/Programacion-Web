@@ -4,53 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <enlace rel="preconectar" href="https://fonts.googleapis.com">
+    <enlace rel="preconectar" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Gloria+Hallelujah&family=Monoton&family=Rubik+Dirt&family=Rubik+Glitch&display=swap" rel="stylesheet">
+    <enlace href="https: //fonts.googleapis.com/css2? family= Rubik+Glitch & display=swap" rel="stylesheet">
     <title>Contacto</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <header>
+    <div class="menu">
         <nav>
             <ul>
                 <li>
-                    <a href="/index.html">Inicio</a>
+                   <a href="/index.html">🏠Inicio</a>
                 </li> 
                 <li>
-                    <a href="/quienessomos.html">Quienes somos</a>
+                   <a href="/quienessomos.html">❓Quienes somos</a>
                 </li>
                 <li>
-                    <a href="/comprar.html">Comprar</a>
+                   <a href="/comprar.html">🛒 Comprar</a>
                 </li>
                 <li>
-                   <a href="/contacto.html">Contacto</a>
+                   <a href="/contacto.html">📞Contactanos</a>
                 </li> 
             </ul>
         </nav>
+    </div>
 
+
+    <div class="logo">
         <center><img src="/img/logo.png" alt=""></center>
+    </div><br>
+<center>
+     <main>
+          <div class="Contacto">
+              <div class="contenidoCon">
+                  <center><h1>Cont&aacute;ctanos</h1></center>
+                  <!-- Formulario -->
+                  <form>
+                      <fieldset>
+                          <legend>Ingresa tus datos</legend>
+                          <label for="">Nombre</label>
+                          <input type="text">
+                          <label for="">Apellido</label>
+                          <input type="text">
+                          <label for="">Edad</label>
+                          <input type="number">
+                          <label for="">Email</label>
+                          <input type="email">
+                          <label for="">Direcci&oacute;n</label>
+                          <input type="text">
+                          <p></p>
+                          <h4>Sexo</h4>
+                          <label for="">Masculino</label>
+                          <input type="radio" name="sexo">
+                          <label for="">Femenino</label>
+                          <input type="radio" name="sexo">
+                          <input type="reset" value="Limpiar">
+                      </fieldset>
+                 </form>
+              </div>
+              <br>
 
-        <div>
-            <center>
-                <h1>CONTACTANOS ¡YA!</h1>
-
-                   <h4>Datos a requerir</h4>
-                   <form action="">
-                      <p>NOMBRE</p>
-                      <input type="text" name="nombre" size="40"><br>
-                      <p>APELLIDOS</p>
-                      <input type="text" name="apellidos" size="40"><br>
-                      <p>EDAD</p>
-                      <input type="text" name="edad" size="40"><br>
-                      <p>EMAIL</p>
-                      <input type="text" name="email" size="40"><br>
-                   </form>
-
-                   <h4>¿Te gustan nuestros productos?</h4>
-                    <form action="">
-                        <input type="radio" id="si" name="sn" value="SI">                       
-                        <label for="html">SI</label><br>
-                        <input type="radio" id="no" name="sn" value="NO">
-                        <label for="css">NO</label><br>
-                    </form>
+              <div class="preguntas">
+                <h4>¿Te gustan nuestros productos?</h4>
+                     <form action="">
+                          <input type="radio" id="si" name="sn" value="SI">                       
+                          <label for="html">SI</label><br>
+                          <input type="radio" id="no" name="sn" value="NO">
+                          <label for="css">NO</label><br>
+                     </form>
+                     <br>
+                   
 
                     <h4>¿Que producto comprarás?</h4>
                     <form action="">
@@ -64,6 +92,7 @@
                             <option value="usb">MEMORIA USB</option>
                           </select>
                     </form>
+                    <br>
 
                     <h4>¿Como evaluas la atención que se te dió?</h4>
                     <form action="">
@@ -74,26 +103,19 @@
                         <input type="checkbox" id="regular" name="regular" value="regu">
                         <label for="vehicle2">Regular</label><br>
                     </form>
-
-                   <h4>Necesitamos tu opinion</h4>
-                   <form action="/action_page.php">
-                       <textarea name="message" rows="10" cols="30">Opinion del cliente.</textarea>
-                          <br><br>
-                    </form>
-
-                   <h5>Enviar formulario</h5>
-                    <button type="button" onclick="alert('enviar')">ENVIAR</button>
+                    <br>
+                    <textarea name="" id="" cols="100" rows="10" placeholder="Dejanos tu comentario"></textarea>
+                    <br>
+                    <input type="submit" value="Enviar">
+                    <br>
                     <br><br>
-                    <h6>Muchas gracias por tu preferencia</h6>
-            </center>
-        
-    
-        </div>
-  
-  
-
-
-
+                    <center><h6>Muchas gracias por tu preferencia</h6></center>
+              </div> 
+               <br>
+          </div>
+       </main>
+    </center>
+    <br><br>
     </header>
 </body>
 </html>
