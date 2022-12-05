@@ -1,157 +1,442 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Sniglet&display=swap');
 
-*{
-    border: 0;
-    padding: 0;
+* {
     margin: 0;
+    padding: 0;
+    font-family: 'Acme', sans-serif;
+    font-family: 'Sniglet', cursive;
+}
+
+a {
     text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.bienvenida{
-    background: linear-gradient(to right,#ffffff, #c5fcfc, #6ce4f7, #ffffff, #57bdf4);
-    height: 30px;
-}
-.logo img{
-    width: 120px;
-    height: 120px;
-    display:flexbox;
-    margin:auto;
+    color: #031731;
+    cursor: pointer;
 }
 
-/*menu*/
-
-nav{
-    background: #ffffff;
-    height: 95px;
-    width: 80%;
+/*ESTILO DE OPCIONES DE MENU*/
+a:hover {
+    border-top: 3px solid #0965a5;
+    border-bottom: 3px solid #0965a5;
+    transition: 0.2s;
 }
-.enlace{
-    position: absolute;
-    padding: 1px 150px;
-}
-.logo{
-    height: 95px;
-}
-nav ul{
-    float: right;
-    margin-right: 80px;
-}
-nav ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
-}
-nav ul li a{
-    color: rgb(0, 0, 0);
-    font-size: 18px;
-    padding: 20px 13px;
-    border-radius: 3px;
-    text-transform: uppercase;
-}
- a:hover{
-    border-bottom: 6px solid red;
-    transition: .5s;
-}
-
-/*buscador field-container*/
-
-  
-/*termina*/
-
-/*estilos para fondo
-.fondo{
-    background-image: url(img/fonfo.jpg);
-    border-radius: 3%;
-    border-color: #030570;
-    border: 5px solid rgb(0, 96, 175);
+.logo-bg {
+    width: 115px;
+    height: 115px;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
     
 }
-*/
 
-/*mapa*/
-.mapa h2{
-    color: #ee3633;
-}
-.mapa{
-    background:linear-gradient(#bef59c,#9bdbe5)
-}
-.nombre{
-    background-color: #0134fe;
-}
-.nombre h6{
-    font-size: 20px;
-    color: #F8F8FF;
-    font-family:'Advertencia', cursiva;
+/*ESTILOS DE MENU EN GENERAL*/
+header {
+    border: 6px solid rgb(0, 0, 0);
+    font-size: larger;
+    background-color: #dcf5f8;
+    height: 100px;
+    transition: .8s;
 }
 
-/*QUINEE SOMOS*/
-.quienesosmos h1{
-    font-family:'Gloria Hallelujah', cursive;;
-    color: #0134fe;
-    font-size: 50px;
-}
-.quienesosmos img{
-    width: 850px;
-    height: 620px;
-}
-.texto h1{
-    font-size: 30px;
-    font-family: 'Monoton', cursive;
-    color:#ee3633;
-}
-.texto p{
-    font-size: 30px;
-    font-family: 'Rubik Glitch', cursive;
+header:hover {
+    background: linear-gradient(to right,#ffffff, #c5fcfc, #6ce4f7, #ffffff, #57bdf4);
+    transition: .8s;
 }
 
 
-/*CONTACTO*/
-
-.Contacto fieldset {
-    height: 140px;
-    width: 500px;
-    border-spacing: 700px;
-    border-color: #36058c;
-    font-size:large;
-    padding:1em;
+nav ul {
+    height: 90px;
+    list-style-type: none;
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    letter-spacing: 3px;
 }
-.contenidoCont {
+
+li {
+    flex-shrink: 1;
+}
+
+section {
+    padding: 30px;
+    display: block;
+}
+
+
+/*ESTILOS DE SITIO PRINCIPAL*/
+/* Clases */
+.bienvenidaIndex {
     position: absolute;
+    width: 100%;
     height: 100vh;
-    width: 90%;
-    background-color: #ffff;
     top: 0;
     left: 50%;
     transform: translate(-50%);
-    padding: 50px;
+    text-align: center;
+    line-height: 4em;
+    padding: 210px;
+}
+.bienvenidaIndex h2{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    color: #e60e0e;
 }
 
-.contenidoCon h1 {
+.iconoaudio {
+    width: 100px;
+    padding: 40px;
+}
+
+.fondoPrincipal {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: #f8f0f0;
+    overflow: hidden;
+}
+.fondoPrincipal video{
+    height: 950px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 3%;
+    padding: 10px; 
+    border: 5px solid rgb(0, 96, 175);
+    opacity: 0.3;
+
+}
+
+/*ESTILOS DE SERVICIO TECNICO*/
+.fondoPrinSerT {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+.fondo2 {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+.fondo3 {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+.SerTecIndex {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
     text-align: center;
-    background: linear-gradient(#f91b1b, #419ceb);
+    line-height: 4em;
+    padding: 450px;
+}
+
+.SerCelIndex {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    line-height: 4em;
+    padding: 350px;
+}
+
+.SopComIndex {
+    position: absolute;
+    width: 140%;
+    height: 100vh;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    line-height: 4em;
+    padding: 450px;
+}
+
+.llama{
+    background-color: #f2ffff;
+    color:#e60e0e;
+    font-size: 60px;
+    font-family: 'Acme', sans-serif;
+    font-family: 'Sniglet', cursive;
+    text-align: center;
+}
+.llama h6{
+    color: #0046dd;
+}
+
+.fondoPrinSerT img{
+    width: 1800px;
+    padding: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.5;
+}
+
+.fondo2 img{
+    width: 1800px;
+    padding: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.5;
+}
+.fondo3 img{
+    width: 1800px;
+    padding: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.5;
+}
+/*ESTILOS DE PRODUCTO*/
+
+.eltituloDeProduc {
+    width: 400px;
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    line-height: 4em;
+    padding: 110px;
+
+}
+.misProductos {
+    display: flex; 
+    flex-wrap: wrap;
+    padding: 35px;
+    justify-content:space-between;
+}
+
+.remove-bg {
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+}
+
+.GridPrincipal {
+    display: grid;
+    gap: 3rem;
+    justify-content: center;
+    background-color: #000000;
+    height: 100%;
+    padding: 50px;
+    grid-template-areas: 'a b c d'
+        'e f g h';
+    grid-template-columns: 22% 22% 22% 22%;
+    grid-template-rows: 42% 42% 42% 42%;
+}
+
+.GridHijo {
+    position: relative;
+    background-color: #ffffff;
+    overflow: hidden;
+    border-radius: 30px 45px 30px 45px;
+}
+
+.DescripcionProducto {
+    position: absolute;
+    height: 100vh;
+    width: 90%;
+    background-color: rgba(243, 229, 229, 0.8);
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 30px;
+    transition: 0.7s;
+
+    text-align: center;
+    cursor: pointer;
+}
+
+.DescripcionProducto:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: 0.7s;
+}
+
+
+/*ESTILOS EN CONTACTO*/
+fieldset {
+    border-spacing: 40px;
+    border-color: #113241;
+    font-size: larger;
+    border-spacing: 50px;
+    padding: 1em;
+}
+
+footer {
+    height: 50px;
+    background-color: #ffffff;
+    padding: 15px;
+    text-align: center;
+}
+
+.contenidoContacto {
+    position: absolute;
+    height: 55vh;
+    width: 90%;
+    background: linear-gradient(to right,#dbd7d7, #a8cafc, #c2f2fa, #ffffff, #dce7d7);
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 30px;
+}
+
+.contenidoContacto h1 {
+    text-align: center;
+    background: linear-gradient(#545b5f, #0965a5);
     -webkit-background-clip: text;
     color: transparent;
 }
 
-.contenidoCon h3 {
+.contenidoContacto h3 {
     padding: 70px;
     text-align: center;
 }
 
-.Contacto {
+.fondoContacto {
     position: relative;
-    height: 80vh;
-    background-color: rgb(212, 241, 248);
+    height: 100vh;
+    background-color: rgb(218, 232, 233);
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
 }
-.Contacto .preguntas h4{
-    font-size: 25px;
+
+/*ESTILOS DE GALERIA*/
+
+.galeria {
+    position: absolute;
+    width: 200%;
+    height: 100vh;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    line-height: 4em;
+    padding: 110px;
 }
-.Contacto .preguntas h6{
-    font-size: 50px;
-    color: #030570;
+
+.galeria ol {
+    text-align: justify;
+}
+
+.container-img{
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 250px;
+    grid-gap: 20px;
+}
+.container-img .box-img figure{
+    width: 100%;
+    height: 100%;
+}
+.container-img .box-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container-img .box-img:nth-child(1){
+    grid-column-start: span 2;
+}
+.container-img .box-img:nth-child(4){
+    grid-row-start: span 2;
+}
+@media screen and (max-width:800px){
+    .container-img{
+        width: 95%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        grid-template-rows: 200px;
+    }
+    .container-img .box-img:nth-child(1){
+        grid-column-start: span 1;
+    }
+}
+@media screen and (max-width:500px){
+    .container-img{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .container-img .box-img img{
+        height: 200px;
+    }
+}
+
+
+
+/* ID */
+#descripcionSomos {
+    padding-top: 2em;
+    text-align: center;
+    line-height: 3em;
+}
+
+#darColoraTitulo {
+    background: linear-gradient(#ffc800, #1b5985);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#imgInicio {
+    width: 50%;
+    height: 40%;
+    border-radius: 30px 0 30px;
+}
+
+#imgSomos {
+    width: 30%;
+    height: 30%;
+    border-radius: 90px;
+    box-shadow: inset;
+}
+
+#mapa {
+    text-align: center;
+}
+
+/*ID inicio (#bienvenida)*/
+#bienvenida {
+    text-align: center;
+    font-size: 115px;
+    color: #001455;
+}
+
+#RepaCom, #RepaCel,#SopCom{
+    text-align: center;
+    font-size: 70px;
+    color: #0046dd;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    
+}
+#RepaComp2, #RepaCel2{
+    text-align: center;
+    font-size: 70px;
+    color: #00481d;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#colorTitulos {
+    text-align: center;
+    background: linear-gradient(#e72525, #2a2802);
+    -webkit-background-clip: text;
+    color: transparent;
 }
