@@ -1,83 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <enlace rel="preconectar" href="https://fonts.googleapis.com">
-    <enlace rel="preconectar" href="https://fonts.gstatic.com" crossorigin>
-   <enlace href="https: //fonts.googleapis.com/css2? family= Rubik+Glitch & display=swap" rel="stylesheet">
-    <title>Puebla</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Tienda-Onlne</title>
+    <link rel="stylesheet" href="./css/estilos.css">
 </head>
+
 <body>
-   <div class="logo">
-      <center><img src="/img/logo.png" alt=""></center>
-   </div>
-   <br>
-
     <header>
-        <div class="inicio">
-            <p>
-               <center>
-                    <h1>
-                       Bienvenido a nuestra tienda online
-                    </h1>
-                    <h2>
-                       Aqui te dejamos nuestro menú para poder disfrutar de nuestros mejores servicios para ti 
-                    </h2>
-               </center>
-            </p>
-        </div>
-        <br>
+        <nav>
+            <ul>
+                <li>
+                    <img src="./img/logo.PNG" alt="" class="logo-bg">
+                </li>
+                <li>
+                    <a href="./index.html"> Inicio</a>
+                </li>
+                <li>
+                    <a href="./servicio-tecnico.html">Servicio Técnico</a>
+                </li>
+                <li>
+                    <a href="./productos.html">Productos</a>
+                </li>
+                <li>
+                    <a href="./galeria.html">Galeria</a>
+                </li>
+                <li>
+                    <a href="./contacto.html">Contácto</a>
+                </li>
 
-         <div class="menu">
-             <nav>
-                 <ul>
-                     <li>
-                        <a href="/index.html">🏠Inicio</a>
-                     </li> 
-                     <li>
-                        <a href="/quienessomos.html">❓Quienes somos</a>
-                     </li>
-                     <li>
-                        <a href="/comprar.html">🛒 Comprar</a>
-                     </li>
-                     <li>
-                        <a href="/contacto.html">📞Contactanos</a>
-                     </li> 
-                 </ul>
-             </nav>
-          </div>
-
-
-           <div class="compu">
-            <br>
-              <img src="img/compu.jpg" alt="" >
-           </div>
-             <br>
-           <div class="video">
-                      <p>Un video acerca de las PC HP</p>
-                     <iframe width="560" height="315" src="https://www.youtube.com/embed/ZUFD4k2BgUs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <main>
+        <div class="fondoPrincipal">
+            <video src="./img/video1.mp4" autoplay muted loop id="fondoIndex"></video>
+            <div class="bienvenidaIndex">
+                <img src="./img/audifonos.png" alt="Audifonos inalambricos" class="iconoaudio">
+                <h1 id="bienvenida">¡Bienvenido a ACCETEC JR!</h1><br>
+                <h2>Una tienda de tecnología para tus dispositivos electrónicos</h2>
             </div>
-            <br>
-
-            <div class="mapa">
-                <h2>
-                   Buscanos en:
-                </h2>
-                   <center>
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m11!1m3!1d126.8637920945285!2d-98.0976889212823!3d19.04329129748504!2m2!1f9.209858867784618!2f45!3m2!1i1024!2i768!4f35!3m3!1m2!1s0x85cfeae4f0c904cd%3A0x6457954db37d489b!2sSerigrafica%20Tohui!5e1!3m2!1ses-419!2smx!4v1668993546473!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                   </center>
-           </div>
-
-           <div class="nombre">
-            <center>
-               <h6>
-                 ELABORADO POR: Jose Javier Reyes Ramos
-               </h6>
-           </center>
-         </div>
-   </header>
+        </div>
+    </main>
 </body>
+
 </html>
