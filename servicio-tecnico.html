@@ -5,70 +5,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda-Onlne</title>
-    <link rel="stylesheet" href="./css/estilos.css">
+    <title>ACCETEC</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+
+    <link rel="shortcut icon" href="./imagenes/garra1.png">
+    <link rel="stylesheet" href="principal.css">
+    <!-- <link rel="stylesheet" href="./css/estilos.css"> -->
 </head>
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="./index.html"><img src="./imagenes/inicio.png" alt=""> Inicio</a>
-                </li>
-                <li>
-                    <a href="./servicio-tecnico.html">Servicio Técnico</a>
-                </li>
-                <li>
-                    <a href="./productos.html">Productos</a>
-                </li>
-                <li>
-                    <a href="./galeria.html">Galeria</a>
-                </li>
-                <li>
-                    <a href="./contacto.html">Contácto</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg menu-principal">
+            <div class="container-fluid menu-principal">
+                <a class="navbar-brand" href="./index.html"><img src="./img/logo.png" alt="" class="remove-bg"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link menu-efecto" aria-current="page" href="./index.html">Inicio</a>
+                        <a class="nav-link menu-efecto" href="./servicio-tecnico.html">Servicio Técnico</a>
+                        <a class="nav-link menu-efecto" href="./productos.html">Productos</a>
+                        <a class="nav-link menu-efecto" href="./contacto.html">Contácto</a>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
+    <main>
+        <div>
+           <center><h1 id="tituColor">¡El cuidado perfecto, esta aqui!</h1></center><br>
+                <marquee width="60%" direction="right" height="100px">
+                    <h3>Aquí encontrarás  ciertos servicios, con un personal de  excelencia tecnológica</h3>
+                    </marquee>
+            </div>
+           
+            <div class="imagenesSeTe">
+                <div class="imagen1">
+                   <img src="./img/Fondo2.jpg" alt="Servicio para pc celulares"
+                    id="imgSerTe"><br>
+                    <div>
+                        <h4>Reparación de computadoras</h4>
+                        <h4>de escritorio</h4>
+                    </div>
+                </div>
 
-<br>
-<main>
-    <div class="fondoPrinSerT">
-        <img src="./img/SerTec.jpg"></img>
-        <div class="SerTecIndex">
-            <h1 id="RepaCom">¡Reparación de PC!</h1><br>
-            <h2 id="RepaComp2">HP, Lenovo, LG, Samsung, Etc.....</h2>
-        </div>
-    </div>
-    <br>
-    <div class="fondo2">
-        <img src="./img/celulares.jpg" alt="">
-        <div class="SerCelIndex">
-            <h1 id="RepaCel">¡Reparación de Celulares!</h1><br>
-            <h2 id="RepaCel2">Motorola, Xiaomi, Samsung, Etc.....</h2>
-        </div>
-    </div>
-    <div class="fondo3">
-        <img src="./img/soporte-remoto.jpeg" alt="">
-        <div class="SopComIndex">
-            <h1 id="SopCom">¡Soporte Técnico Remoto!</h1><br>
-        </div>
-    </div>
+                <div class="imagen2">
+                    <img src="./img/lap.jpg" alt="Servicio para pc celulares"
+                    id="imgSerTe3">
+                    <div>
+                      <h4>Reparación de laptops</h4>
+                  </div>
+              </div>
 
-    <div class="llama">
-          <p>
-              Repare su Equipo. Llámenos ahora al ..
-          </p>
-          <p>
-              (11) 5368-0110
-           </p>
-           <h6>
-            Nuestros técnicos lo ayudaran con la solución a sus problemas de su PC, Notebook, Servidor, Tablet o Celular u otra consulta
-           </h6>
-    </div>
-      
-</main>
+                <div class="imagen3">
+                        <img src="./img/cel.jpg" alt="Servicio para pc celulares"
+                        id="imgSerTe2">
+                        <div>
+                            <h4>Reparación de celulares</h4>
+                        </div>
+                </div>
+                
+            </div>
+        
+            <div class="barraST4">
+                <div class="animacionST4">
+                    <marquee width="100%" direction="left" height="90px"  >
+                        <h3>NO PUEDES CONTACTAR👇 TENEMOS NUESTRAS REDES SOCIALES </h3>
+                    <center><a href="./contacto.html">pulsa aqui (👆)</a></center>
+                    </marquee>
+                    
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

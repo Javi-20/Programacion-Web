@@ -1,0 +1,7 @@
+@mixin testimonios($idGrid, $color, $colorSom) {
+    grid-area: $idGrid;
+    background-color: $color;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 8px 8px 8px $colorSom;
+}
