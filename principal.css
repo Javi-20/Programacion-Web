@@ -1,12 +1,374 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Acme&family=Sniglet&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   font-family: "Acme", sans-serif;
   font-family: "Sniglet", cursive;
 }
+/*nav*/
 
+nav{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background: #FCCC0C;
+}
+.menu{
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+.menu li{
+  list-style: none;
+}
+.menu a{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 15px;
+  padding: 30px;
+  transition: .9s;
+  font-weight: 600;
+}
+.menu a:hover {
+color: rgb(0, 0, 0);
+font-weight: 500;
+  letter-spacing: 2px;
+}
+.bar{
+  display: none;
+  cursor: pointer;
+}
+.bar div{
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px;
+  transition: all .5s ease;
+}
+.miNombre{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  transition: .9s;
+  font-weight: 600;
+
+}
+/*Redes sociales*/
+.sociales {
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons {
+  min-width: 300px;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+
+.buttons a {
+  text-decoration: none;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: #000000;
+  color: #f1f1f1;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+  transition: all .4s ease-in-out;
+}
+
+.buttons a:hover {
+  transform: scale(1.2);
+}
+
+@media screen and (max-width:1024px){
+  .menu{
+      width: 60%;
+  }
+}
+@media screen and (max-width:768px){
+  body{
+      overflow-x: hidden;
+  }
+  .menu{
+      position: absolute;
+      right: -100%;
+      height: 90vh;
+      top: 10vh;
+      background-color: #FCCC0C;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      transform: translateX(100%);
+      transition: transform 0.5s ease-in-out;
+  }
+  .bar{
+      display: block;
+  }
+}
+
+.nav-active{
+  transform: translateX(-100%);
+}
+.bar-active .bar-1{
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.bar-active .bar-2{
+  opacity: 0;
+}
+.bar-active .bar-3{
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+.banner {
+background-image: url(img/fondo.png);
+height: 100vh;
+background-size: cover;
+background-position: center;
+}
+
+.content h2 {
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+color: rgb(255, 255, 255);
+font-size: 60px;
+}
+.content p {
+  width: 50%;
+  color: rgb(255, 255, 255);
+  line-height: 2;
+  font-size: 30px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.content a {
+  background: deepskyblue;
+  text-decoration: none;
+  padding: 15px 30px;
+  color: #fff;
+  display: inline-block;
+  margin-top: 40px;
+  font-size: 30px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.socials i {
+  color: #fff;
+  font-size: 18px;
+  margin-right: 25px;
+}
+.socials {
+  margin-top: 30px;
+}
+.wrapper {
+width: 1060px;
+margin: auto;
+padding-top: 12%;
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+  .wrapper {
+      width: 75%;
+      padding-top: 26%;
+  }
+  .content{
+      text-align: center;
+  }
+  .content h2 {
+      font-size: 60px;
+  }
+  .content p {
+      width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .banner {
+      background-position: 60%;
+  }
+  .wrapper {
+      width: 75%;
+      padding-top: 26%;
+  }
+  .content h2 {
+      font-size: 30px;
+  }
+  .content p {
+      width: 100%;
+  }
+}
+/*ESTILOS DE SERVICIO TECNICO*/
+.titSer h1{
+  text-align: center;
+  background: linear-gradient(#1497be,#1c2aec);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: text 5s linear infinite;
+  font-size: 60px;
+  font-family: 'Anton', sans-serif;
+}
+
+.titSer h3{
+  text-align: center;
+  color: black;
+  font-size: 30px;
+  font-family: 'Abel', sans-serif;
+}
+@keyframes text{
+  0%{
+      filter: hue-rotate(0deg);
+  }
+  100%{
+      filter: hue-rotate(360deg);
+  }
+}
+.items{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  padding: 30px 20px;
+  grid-column-gap: 20px;
+  grid-row-gap: 30px;
+}
+.item img{
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+.item img:hover{
+  transform: scale(1.04);
+}
+.item h3{
+  padding: 5px;
+  text-align: center;
+}
+.messaje h3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn{
+  margin-left: auto;
+  margin-right: auto;
+  width: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 890;
+  background-color: #e8ef1e; 
+  border-radius: 10px;
+  padding: 10px 60px;
+  color: #000000;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn:hover{
+  background-color: transparent;
+  border: 2px solid #6c4c3a ;
+  color: #6c4c3a;
+}
+
+.item button:hover{
+  transform: scale(1.04);
+}
+.slider-card {
+  color: rgb(0, 0, 0);
+  background: #f9f9f9;
+  padding: 0px 0px;
+  margin: 50px 20px 80px 20px;
+  border-radius: 5px;
+  box-shadow: 0 15px 45px -20px rgb(0 0 0 / 73%);
+  transform: scale(0.9);
+  transition: all 0.3s;
+}
+
+.slider-card h5{
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Passion One', cursive;
+}
+.slider-card p{
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Cuprum', sans-serif;
+}
+
+@media screen and (max-width:1000px) {
+  .items{
+      grid-template-columns: repeat(2,1fr);
+  }
+}
+@media screen and (max-width:768px) {
+  .items{
+      grid-template-columns: repeat(1,1fr);
+  }
+}
+
+/*ESTILOS QUIENES SOMOS*/
+:root {
+  --bs-body-bg: #ffffff;
+}
+
+.steps {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.steps__section-thumbnail {
+  height: 240px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.steps__content-width {
+  max-width: 456px;
+  margin: 0 auto;
+}
+
+.steps--background {
+  background-color: #ffffff;
+}
+
+@media (min-width: 544px) {
+  .steps {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .steps__section-thumbnail {
+    height: auto;
+  }
+}
+
+
+/*
 a {
   text-decoration: none;
   color: #000000;
@@ -16,7 +378,7 @@ a {
 
 a:hover {
   /* border-top: 3px solid #0965a5;
-  border-bottom: 3px solid #0965a5; */
+  border-bottom: 3px solid #0965a5; 
   transition: 0.2s;
 }
 
@@ -80,7 +442,26 @@ section {
   padding: 30px;
 }
 
-/* Clases */
+/* Clases 
+.contenedor{
+  width: 2000px;
+  height: 700px;  
+}
+.contenedor img{
+  width: 100%;
+  height: 50%;
+}
+.contenedor h1{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 80px;
+  color: #fff9f9;
+  position:absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-shadow: 0 0 8 px rgb(0, 0, 0);
+
+}
 
 .mjeBienvenidaIndex {
   position: absolute;
@@ -267,7 +648,7 @@ section {
   mix-blend-mode: multiply;
 }
 
-/*estilos productos*/
+/*estilos productos
 .wrap{
 	max-width: 1100px;
 	width: 90%;
@@ -353,7 +734,7 @@ section {
 	text-decoration: none;
 }
 
-/* RESPONSIVE de productos */
+/* RESPONSIVE de productos 
 
 @media screen and (max-width: 1100px){
 	.products-list .product-item{
@@ -462,7 +843,7 @@ section {
 /*
 
 
-/* ID */
+/* ID 
 
 #tituColor {
   background: linear-gradient(#022c26, #6ae5ee);
@@ -545,7 +926,7 @@ section {
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   padding: 9%;
 }
-
+*/
 
 /* Dispositivos pequeños (tablets y teléfonos) */
 @media only screen and (min-width: 320px) and (max-width: 600px) {
@@ -583,4 +964,4 @@ section {
   }
 }
 
-/*# sourceMappingURL=base.css.map */
+
