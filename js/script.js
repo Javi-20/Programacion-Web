@@ -95,7 +95,7 @@ console.log(" El cliente " + cliente + " con id de la tienda " + id + " tiene " 
 
 //5. Crear un arreglo que contenga: 1-string, 2-números, 1-array con 2 valores y realizar la desestructuración de 3 de ellas. Imprimir su resultado en la terminal con console.log().
 console.log("\t----- ARREGLO ----- ");
-let arreglo = ["Hola!!! ¿como estas?", 20, 22, [true, false]];
+let arreglo = ["Hola!!! Soy Javi ¿como estas?", 20, 22, [true, false]];
 const [bienvenida, dia, año] = arreglo;
 console.log(bienvenida);
 console.log("Mi cumpleaños es el día " + dia + " de mayo");
