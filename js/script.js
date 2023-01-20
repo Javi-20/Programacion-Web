@@ -101,7 +101,7 @@ console.log("Mi cumpleaños es el día " + dia + " de mayo");
 console.log("Y cumpliré " + año + " años ");*/
 
 
-/*ACTIVIDAD 7 Semana 7
+//ACTIVIDAD 7 Semana 7
 
 //1. Declara una variable “let edad = Number”, luego crea un condicional “if” donde hagas una comparación, si la edad es mayor o igual a 18, imprime en consola “VÁLIDO”. De lo contrario “NO VÁLIDO”.
 console.log("\t-----  Ejercicio 1  ----- ");
@@ -124,7 +124,7 @@ let productos = [
 for(i=0; i<productos.length; i++){
     console.log('El producto comprado es: ' + productos[i].producto);
 }
-*/
+
 //3. Crear un bucle switch donde simula la venta de entradas al cine. Donde dependiendo de la edad el cliente recibe alguna promoción.
 console.log("\t-----  Ejercicio 3  ----- ");
 let edad2 = parseInt(prompt('Ingrese su edad'));
