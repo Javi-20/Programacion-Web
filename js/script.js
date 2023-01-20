@@ -36,11 +36,10 @@ $(document).ready(function(){
 			$('.product-item').css('transform', 'scale(1)');
 		} setTimeout(showAll,400);
 	});
-});*/
+});
 
 
-
-/*ACTIVIDAD 6 Semana 6*/
+/*ACTIVIDAD 6 Semana 6
 
 //1. Una función que ejecute una suma de 3 números, imprimir su resultado en la terminal con console.log(). 
 console.log("\t----- Función SUMA ----- ");
@@ -99,4 +98,90 @@ let arreglo = ["Hola!!! Soy Javi ¿como estas?", 20, 22, [true, false]];
 const [bienvenida, dia, año] = arreglo;
 console.log(bienvenida);
 console.log("Mi cumpleaños es el día " + dia + " de mayo");
-console.log("Y cumpliré " + año + " años ");
+console.log("Y cumpliré " + año + " años ");*/
+
+
+/*ACTIVIDAD 7 Semana 7
+
+//1. Declara una variable “let edad = Number”, luego crea un condicional “if” donde hagas una comparación, si la edad es mayor o igual a 18, imprime en consola “VÁLIDO”. De lo contrario “NO VÁLIDO”.
+console.log("\t-----  Ejercicio 1  ----- ");
+let edad = 21;
+if(edad >=18){
+    console.log('VÁLIDO');
+}else{
+	console.log('NO VÁLIDO');
+}
+
+//2. Crea un array que contenga mínimo 4 objetos, que a su vez contengan como mínimo 3 claves e imprime todo el array en consola con un bucle “for”.
+console.log("\t-----  Ejercicio 2  ----- ");
+
+let productos = [
+	{producto: 'Galletas', codigo: '256', precio:'$17',cantidad:'4'},
+	{producto: 'Jugo', codigo: '145', precio:'$20',cantidad:'2'},
+	{producto: 'Papas', codigo: '014', precio:'$15',cantidad:'1'}
+];
+
+for(i=0; i<productos.length; i++){
+    console.log('El producto comprado es: ' + productos[i].producto);
+}
+*/
+//3. Crear un bucle switch donde simula la venta de entradas al cine. Donde dependiendo de la edad el cliente recibe alguna promoción.
+console.log("\t-----  Ejercicio 3  ----- ");
+let edad2 = parseInt(prompt('Ingrese su edad'));
+
+switch(edad2){
+	  case 15:
+	  case 16:
+	  case 17:
+      case 18:
+		console.log('Tu promocion es: FANTA gratis en la compra de cualquier combo');
+	  break;
+	  case 19:
+	  case 20:
+	  case 21:
+	  case 22:
+	  case 23:
+	  case 24:
+	  case 25:
+	  case 26:
+	  case 27:
+	  case 28:
+	  case 29:
+	  case 30:
+	  case 31:
+	  case 32:
+	  case 33:
+	  case 34:
+	  case 35:
+	  case 36:
+	  case 37:
+	  case 38:
+	  case 39:
+	  case 40:
+	  case 41:
+	  case 42:
+	  case 43:
+	  case 44:
+	  case 45:
+	  case 46:
+	  case 47:
+	  case 48:
+	  case 49:
+	  case 50:
+	  case 51:
+	  case 52:
+	  case 53:
+	  case 54:
+	  case 55:
+	  case 56:
+	  case 57:
+	  case 58:
+	  case 59:
+	  case 60:
+	   console.log('Viernes entradas a $35 o $25 para socios Club Cinépolis');
+	  break;
+	  default:
+		console.log('Podeís esperar tu promoción');
+      break;
+}
+
