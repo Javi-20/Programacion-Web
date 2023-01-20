@@ -181,7 +181,7 @@ switch(edad2){
 	   console.log('Viernes entradas a $35 o $25 para socios Club Cinépolis');
 	  break;
 	  default:
-		console.log('Podeís esperar tu promoción');
+		console.log('Podeís esperar tu promoción, pronto te llegará');
       break;
 }
 
