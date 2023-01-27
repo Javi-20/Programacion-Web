@@ -2,7 +2,7 @@ html {
     font-size: 62.5%;
 }
 body {
-    background-color: #f5f3f3
+    background-color: #f2f2f2
 }
 h1 {
     text-align: center;
@@ -24,7 +24,7 @@ header {
         text-align: left;
     }
 }
-.borrar-curso {
+.borrar-productos {
     background-color: red;
     border-radius: 50%;
     padding: 5px 10px;
@@ -134,7 +134,7 @@ ul {
     background-image: url(../img/icono3.png);
 }
 
-#lista-cursos .row {
+#lista-productos .row {
     margin-bottom:20px;
 }
 .agregar-carrito {

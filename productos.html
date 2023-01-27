@@ -2,239 +2,197 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ACCETEC</title>
+    <title>Carrito</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
     <link rel="stylesheet" href="css/custom.css">
-    <link
-      href="https://fonts.googleapis.com/css2?family=Moon+Dance&display=swap"
-      rel="stylesheet">
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet">
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <!--<link rel="stylesheet" href="principal.css">-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Anton&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Anton&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <header id="header" class="header">
-        <div class="container">
-            <div class="row">
-                <div class="four columns">
-                    <img src="img/logo.png" id="logo">
-                </div>
-                <div class="two columns u-pull-right">
-                    <ul>
-                        <li class="submenu">
-                                <img src="img/cart.png" id="img-carrito">
-                                <div id="carrito">
-                                        
-                                        <table id="lista-carrito" class="u-full-width">
-                                            <thead>
-                                                <tr>
-                                                    <th>Imagen</th>
-                                                    <th>Nombre</th>
-                                                    <th>Precio</th>
-                                                    <th>Cantidad</th>
-                                                    <th></th>
-                                                </tr>
-                                            </thead>
-                                            <tbody></tbody>
-                                        </table>
-    
-                                        <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
-                                </div>
-                        </li>
-                    </ul>
-                </div>
-            </div> 
-        </div>
-        </header>
-    
-    
-        <div id="lista-cursos" class="container">
-            <h1 id="encabezado" class="encabezado">EQUIPOS</h1>
-            <div class="row">
-                <div class="four columns">
+<header id="header" class="header">
+    <div class="container">
+        <div class="row">
+            <div class="four columns">
+                <img src="/img/logo.png" id="logo">
+            </div>
+            <div class="two columns u-pull-right">
+                <ul>
+                    <li class="submenu">
+                            <img src="img/cart.png" id="img-carrito">
+                            <div id="carrito">
+                                    
+                                    <table id="lista-carrito" class="u-full-width">
+                                        <thead>
+                                            <tr>
+                                                <th>Imagen</th>
+                                                <th>Producto</th>
+                                                <th>Precio</th>
+                                                <th>Cantidad</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+
+                                    <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                            </div>
+                    </li>
+                </ul>
+            </div>
+        </div> 
+    </div>
+    </header>
+
+
+    <div id="lista-productos" class="container">
+        <h1 id="encabezado" class="encabezado">Productos disponibles</h1>
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/1.png" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Laptop Gamer HP 15.6'' HD Pantalla Touch 128GB -Plata</h4>
+                        <p>Gamer HP</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$18,619.00 MXN <span class="u-pull-right ">$16,190.00 MXN</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar Al Carrito</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
                     <div class="card">
-                        <img src="img/1.png" class="imagen-curso u-full-width">
+                        <img src="img/2.png" class="imagen-curso u-full-width">
                         <div class="info-card">
-                            <h4>Laptop Gamer HP 15.6'' HD Pantalla Touch 128GB -Plata</h4>
-                            <p>Gamer HP</p>
+                            <h4>IdeaPad 3 6ta Gen (15.6", AMD)</h4>
+                            <p>Lenovo</p>
                             <img src="img/estrellas.png">
-                            <p class="precio">$18,619.00 MXN <span class="u-pull-right ">$16,190.00 MXN</span></p>
-                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar Al Carrito</a>
+                            <p class="precio">$18,300.00  MXN <span class="u-pull-right ">$17,500.00  MXN</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2">Agregar Al Carrito</a>
+                        </div>
+                    </div>
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/3.png" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>ASUS AiO PC de escritorio</h4>
+                            <p>Juan Pedro</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">$13,250.00  MXN<span class="u-pull-right ">$12,581.98 MXN</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Agregar Al Carrito</a>
                         </div>
                     </div> <!--.card-->
-                </div>
-                <div class="four columns">
-                        <div class="card">
-                            <img src="img/2.png" class="imagen-curso u-full-width">
-                            <div class="info-card">
-                                <h4>IdeaPad 3 6ta Gen (15.6", AMD)</h4>
-                                <p>Lenovo</p>
-                                <img src="img/estrellas.png">
-                                <p class="precio">$18,300.00  MXN <span class="u-pull-right ">$17,500.00  MXN</span></p>
-                                <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2">Agregar Al Carrito</a>
-                            </div>
-                        </div>
-                </div>
-                <div class="four columns">
-                        <div class="card">
-                            <img src="img/3.png" class="imagen-curso u-full-width">
-                            <div class="info-card">
-                                <h4>ASUS AiO PC de escritorio</h4>
-                                <p>Juan Pedro</p>
-                                <img src="img/estrellas.png">
-                                <p class="precio">$13,250.00  MXN<span class="u-pull-right ">$12,581.98 MXN</span></p>
-                                <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Agregar Al Carrito</a>
-                            </div>
-                        </div> <!--.card-->
-                </div>
-    
-            </div> <!--.row-->
-            <div class="row">
-                <div class="four columns">
+            </div>
+
+        </div> <!--.row-->
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/4.png" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Computadora Mini Pc Gigabyte Intelcore I3 1tb Monitor 24 Kit</h4>
+                        <p>Marca Gigabyte</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$14,000.00 MXN  <span class="u-pull-right ">$12,599.00 MXN</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="4">Agregar Al Carrito</a>
+                    </div>
+                </div> <!--.card-->
+            </div>
+            <div class="four columns">
                     <div class="card">
-                        <img src="img/4.png" class="imagen-curso u-full-width">
+                        <img src="img/5.png" class="imagen-curso u-full-width">
                         <div class="info-card">
-                            <h4>Computadora Mini Pc Gigabyte Intelcore I3 1tb Monitor 24 Kit</h4>
-                            <p>Marca Gigabyte</p>
+                            <h4>MSI Computadora GF63, NVIDIA GeForce GTX 1650 Gráficos, 15.6" 8GB 256GB Intel Core i5-10300H X4 2.5GHz Win10, negro</h4>
+                            <p>Marca msi</p>
                             <img src="img/estrellas.png">
-                            <p class="precio">$14,000.00 MXN  <span class="u-pull-right ">$12,599.00 MXN</span></p>
-                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="4">Agregar Al Carrito</a>
+                            <p class="precio">$13,290.00  MXN<span class="u-pull-right ">$14,698.00 MXN</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="5">Agregar Al Carrito</a>
                         </div>
                     </div> <!--.card-->
-                </div>
-                <div class="four columns">
-                        <div class="card">
-                            <img src="img/5.png" class="imagen-curso u-full-width">
-                            <div class="info-card">
-                                <h4>MSI Computadora GF63, NVIDIA GeForce GTX 1650 Gráficos, 15.6" 8GB 256GB Intel Core i5-10300H X4 2.5GHz Win10, negro</h4>
-                                <p>Marca msi</p>
-                                <img src="img/estrellas.png">
-                                <p class="precio">$13,290.00  MXN<span class="u-pull-right ">$14,698.00 MXN</span></p>
-                                <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="5">Agregar Al Carrito</a>
-                            </div>
-                        </div> <!--.card-->
-                </div>
-                <div class="four columns">
-                        <div class="card">
-                            <img src="img/6.png" class="imagen-curso u-full-width">
-                            <div class="info-card">
-                                <h4>Laptop Lanix Neuron ALC4-C21 Intel Celeron 4GB RAM 128GB SSD</h4>
-                                <p>Marca Lanix</p>
-                                <img src="img/estrellas.png">
-                                <p class="precio">$3,600.00  MXN <span class="u-pull-right ">$3,499.00 MXN</span></p>
-                                <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="6">Agregar Al Carrito</a>
-                            </div>
-                        </div> <!--.card-->
-                </div>
-            </div> <!--.row-->
-            <div class="row">
-                <div class="four columns">
+            </div>
+            <div class="four columns">
                     <div class="card">
-                        <img src="img/7.png" class="imagen-curso u-full-width">
+                        <img src="img/6.png" class="imagen-curso u-full-width">
                         <div class="info-card">
-                            <h4>Mini Computadora Compaq Presario CQ1500LA, Procesador Intel Atom D510 (1.66GHz), 
-                                Memoria de 1GB DDR2, D.D. de 250GB, SuperMulti DVD±R/RW Lightscribe, Red, Windows 7 Starter, Monitor LCD Widescreen de 15.6".</h4>
-                            <p>Marca Compaq</p>
+                            <h4>Laptop Lanix Neuron ALC4-C21 Intel Celeron 4GB RAM 128GB SSD</h4>
+                            <p>Marca Lanix</p>
                             <img src="img/estrellas.png">
-                            <p class="precio">$16,900.00 MXN  <span class="u-pull-right ">$16,289.00 MXN</span></p>
-                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="7">Agregar Al Carrito</a>
+                            <p class="precio">$3,600.00  MXN <span class="u-pull-right ">$3,499.00 MXN</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="6">Agregar Al Carrito</a>
                         </div>
                     </div> <!--.card-->
+            </div>
+        </div> <!--.row-->
+         <!--<div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="img/7.png" class="imagen-curso u-full-width">
+                    <div class="info-card">
+                        <h4>Mini Computadora Compaq Presario CQ1500LA, Procesador Intel Atom D510 (1.66GHz), 
+                            Memoria de 1GB DDR2, D.D. de 250GB,Windows 7 Starter.</h4>
+                        <p>Marca Compaq</p>
+                        <img src="img/estrellas.png">
+                        <p class="precio">$16,900.00 MXN  <span class="u-pull-right ">$16,289.00 MXN</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="7">Agregar Al Carrito</a>
+                    </div>
+                </div> .card
+            </div>
+            <div class="four columns">
+                    <div class="card">
+                        <img src="img/8.png" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Inalámbrico de Y Mouse : Incluye Y Mouse de Larga Duración - Soledad Combo de teclado inalámbrico y mouse</h4>
+                            <p>Marca Soledad</p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">$560.68 MXN <span class="u-pull-right ">$462.49 MXN</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="8">Agregar Al Carrito</a>
+                        </div>
+                    </div> .card
+            </div>
+           <div class="four columns">
+                    <div class="card">
+                        <img src="img/9.png" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>SAMSUNG Galaxy A32 (5G) 64GB A326U (T-Mobile/Sprint Unlocked) Pantalla de 6.5"Cámara cuádruple Batería de Larga duración 
+                                Smartphone - Negro (Reacondicionado)</h4>
+                            <p>SAMSUNG Galaxy A32 (5G) </p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">$5,298.00 MXN <span class="u-pull-right ">$4,889.00 MXN</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="9">Agregar Al Carrito</a>
+                        </div>
+                    </div> .card
+            </div>
+        </div> .row
+        <div class="row">
+                <div class="four columns">
+                    <div class="card">
+                        <img src="img/10.png" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>SAMSUNG Galaxy Tab S7+ | S7 FE | S8+ 12.4" Funda oficial para libro (gris oscuro)</h4>
+                            <p>SAMSUNG Galaxy </p>
+                            <img src="img/estrellas.png">
+                            <p class="precio">$2,300.00 MXN<span class="u-pull-right ">$1,705.43 MXN</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="10">Agregar Al Carrito</a>
+                        </div>
+                    </div> .card
                 </div>
                 <div class="four columns">
                         <div class="card">
-                            <img src="img/8.png" class="imagen-curso u-full-width">
+                            <img src="img/11.png" class="imagen-curso u-full-width">
                             <div class="info-card">
-                                <h4>Inalámbrico de Y Mouse : Incluye Y Mouse de Larga Duración - Soledad Combo de teclado inalámbrico y mouse</h4>
-                                <p>Marca Soledad</p>
+                                <h4>Bocinas Acteck Para Pc Computadora Laptop Usb Plug 3.5mm</h4>
+                                <p>Marca Acteck</p>
                                 <img src="img/estrellas.png">
-                                <p class="precio">$560.68 MXN <span class="u-pull-right ">$462.49 MXN</span></p>
-                                <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="8">Agregar Al Carrito</a>
+                                <p class="precio">$200.00 MXN <span class="u-pull-right ">$99.00 MXN</span></p>
+                                <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="11">Agregar Al Carrito</a>
                             </div>
-                        </div> <!--.card-->
-                </div>
-                <div class="four columns">
-                        <div class="card">
-                            <img src="img/9.png" class="imagen-curso u-full-width">
-                            <div class="info-card">
-                                <h4>SAMSUNG Galaxy A32 (5G) 64GB A326U (T-Mobile/Sprint Unlocked) Pantalla de 6.5"Cámara cuádruple Batería de Larga duración 
-                                    Smartphone - Negro (Reacondicionado)</h4>
-                                <p>SAMSUNG Galaxy A32 (5G) </p>
-                                <img src="img/estrellas.png">
-                                <p class="precio">$5,298.00 MXN <span class="u-pull-right ">$4,889.00 MXN</span></p>
-                                <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="9">Agregar Al Carrito</a>
-                            </div>
-                        </div> <!--.card-->
-                </div>
+                        </div> .card
+                </div>-->
             </div> <!--.row-->
-            <div class="row">
-                    <div class="four columns">
-                        <div class="card">
-                            <img src="img/10.png" class="imagen-curso u-full-width">
-                            <div class="info-card">
-                                <h4>SAMSUNG Galaxy Tab S7+ | S7 FE | S8+ 12.4" Funda oficial para libro (gris oscuro)</h4>
-                                <p>SAMSUNG Galaxy </p>
-                                <img src="img/estrellas.png">
-                                <p class="precio">$2,300.00 MXN<span class="u-pull-right ">$1,705.43 MXN</span></p>
-                                <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="10">Agregar Al Carrito</a>
-                            </div>
-                        </div> <!--.card-->
-                    </div>
-                    <div class="four columns">
-                            <div class="card">
-                                <img src="img/11.png" class="imagen-curso u-full-width">
-                                <div class="info-card">
-                                    <h4>Bocinas Acteck Para Pc Computadora Laptop Usb Plug 3.5mm</h4>
-                                    <p>Marca Acteck</p>
-                                    <img src="img/estrellas.png">
-                                    <p class="precio">$200.00 MXN <span class="u-pull-right ">$99.00 MXN</span></p>
-                                    <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="11">Agregar Al Carrito</a>
-                                </div>
-                            </div> <!--.card-->
-                    </div>
-                    <div class="four columns">
-                            <div class="card">
-                                <img src="img/12.png" class="imagen-curso u-full-width">
-                                <div class="info-card">
-                                    <h4>Memoria Usb Adata C008 32gb 2.0 Negro Y Rojo</h4>
-                                    <p>Marca Adata</p>
-                                    <img src="img/estrellas.png">
-                                    <p class="precio">$89.00 MXN  <span class="u-pull-right ">$68.96 MXN</span></p>
-                                    <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="12">Agregar Al Carrito</a>
-                                </div>
-                            </div> <!--.card-->
-                    </div>
-                </div> <!--.row-->
-        </div>  
-    
-        <script src="js/app.js"></script>
-    
-    </body>
+    </div>  
+
+    <script src="js/app.js"></script>
+
+</body>
 </html>

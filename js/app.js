@@ -1,6 +1,6 @@
 // Variables
 const carrito = document.querySelector('#carrito');
-const listaCursos = document.querySelector('#lista-cursos');
+const listaCursos = document.querySelector('#lista-productos');
 const contenedorCarrito = document.querySelector('#lista-carrito tbody');
 const vaciarCarritoBtn = document.querySelector('#vaciar-carrito'); 
 let articulosCarrito = [];
@@ -69,7 +69,7 @@ function leerDatosCurso(curso) {
 // Elimina el curso del carrito en el DOM
 function eliminarCurso(e) {
     e.preventDefault();
-    if(e.target.classList.contains('borrar-curso') ) {
+    if(e.target.classList.contains('borrar-productos') ) {
          // e.target.parentElement.parentElement.remove();
          const cursoId = e.target.getAttribute('data-id')
          
@@ -96,7 +96,7 @@ function carritoHTML() {
               <td>${curso.precio}</td>
               <td>${curso.cantidad} </td>
               <td>
-                   <a href="#" class="borrar-curso" data-id="${curso.id}">X</a>
+                   <a href="#" class="borrar-productos" data-id="${curso.id}">X</a>
               </td>
          `;
          contenedorCarrito.appendChild(row);
