@@ -102,7 +102,7 @@ console.log("Y cumpliré " + año + " años ");*/
 
 
 //ACTIVIDAD 7 Semana 7
-
+console.log("------------------ACTIVIDAD 8------------------")
 //1. Declara una variable “let edad = Number”, luego crea un condicional “if” donde hagas una comparación, si la edad es mayor o igual a 18, imprime en consola “VÁLIDO”. De lo contrario “NO VÁLIDO”.
 console.log("\t-----  Ejercicio 1  ----- ");
 let edad = 21;
@@ -111,77 +111,105 @@ if(edad >=18){
 }else{
 	console.log('NO VÁLIDO');
 }
+console.log("La edad es: " + edad)
 
 //2. Crea un array que contenga mínimo 4 objetos, que a su vez contengan como mínimo 3 claves e imprime todo el array en consola con un bucle “for”.
 console.log("\t-----  Ejercicio 2  ----- ");
+const carritoCom = [];
 
-let productos = [
-	{producto: 'Galletas', codigo: '256', precio:'$17',cantidad:'4'},
-	{producto: 'Jugo', codigo: '145', precio:'$20',cantidad:'2'},
-	{producto: 'Papas', codigo: '014', precio:'$15',cantidad:'1'}
+const agregarCarrito = (producto, carritoCom) => {
+    carritoCom.push(producto);
+    console.log("¡Producto agregado correctamente!")
+}
+
+const productos = [
+    {
+        codigo: "ACE001",
+        nombre: "Laptop ACER",
+        precio: 12300
+    },
+    {
+        codigo: "ACE002",
+        nombre: "Computadora de escritorio LG",
+        precio: 17866
+    },
+    {
+        codigo: "ACE003",
+        nombre: "Computadora de escritorio HP",
+        precio: 16369
+    },
+    {
+        codigo: "ACE004",
+        nombre: "Laptopt Gygabyte ",
+        precio: 11299
+    }
 ];
 
-for(i=0; i<productos.length; i++){
-    console.log('El producto comprado es: ' + productos[i].producto);
+console.log("\tProductos")
+for (let i = 0; i < productos.length; i++) {
+    console.log(productos[i]);
 }
+
 
 //3. Crear un bucle switch donde simula la venta de entradas al cine. Donde dependiendo de la edad el cliente recibe alguna promoción.
 console.log("\t-----  Ejercicio 3  ----- ");
-let edad2 = parseInt(prompt('Ingrese su edad'));
+console.log("\t-----  Promosiones  ----- ");
+alert("Bienvenido al cine de la escuela de EMTECH");
+let entradaEd = parseInt(prompt("Ingresa la opción correspondiente a tu edad: \n1. Tengo menos de 18 años \n2. Tengo de 18 años \n3. Soy de la tercera edad"));
 
-switch(edad2){
-	  case 15:
-	  case 16:
-	  case 17:
-      case 18:
+switch(entradaEd){
+	  case 1:
 		console.log('Tu promocion es: FANTA gratis en la compra de cualquier combo');
 	  break;
-	  case 19:
-	  case 20:
-	  case 21:
-	  case 22:
-	  case 23:
-	  case 24:
-	  case 25:
-	  case 26:
-	  case 27:
-	  case 28:
-	  case 29:
-	  case 30:
-	  case 31:
-	  case 32:
-	  case 33:
-	  case 34:
-	  case 35:
-	  case 36:
-	  case 37:
-	  case 38:
-	  case 39:
-	  case 40:
-	  case 41:
-	  case 42:
-	  case 43:
-	  case 44:
-	  case 45:
-	  case 46:
-	  case 47:
-	  case 48:
-	  case 49:
-	  case 50:
-	  case 51:
-	  case 52:
-	  case 53:
-	  case 54:
-	  case 55:
-	  case 56:
-	  case 57:
-	  case 58:
-	  case 59:
-	  case 60:
+	  
+	  case 2:
 	   console.log('Viernes entradas a $35 o $25 para socios Club Cinépolis');
 	  break;
-	  default:
-		console.log('Podeís esperar tu promoción, pronto te llegará');
-      break;
+	  case 2:
+	   console.log('Descuento del 25%');
+	  break;
 }
 
+//ACTIVIDAD 7 Semana 7
+console.log("------------------ACTIVIDAD 8------------------")
+//1. Imprimir en consola solo las marcas con sus stock.
+console.log("**1. Imprimir en consola solo las marcas con sus stock.**");
+console.log("Productos:")
+productos.forEach((e) => {
+    console.log("\t" + e.nombre);
+})
+
+//2. Imprimir en consola solo si alguno de los productos cuesta más de 200. 
+console.log("***2. Imprimir en consola solo si alguno de los productos cuesta más de 200.***");
+let productosCostosos = productos.filter((e) => e.precio > 200);
+console.log("Los productos mayores de $200 son: " , productosCostosos);
+
+//3. Imprime en consola el precio promedio de los productos.
+console.log("***3.Imprime en consola el precio promedio de los productos. Si no sabes sacar un promedio***");
+const productosPrec = productos.map(item => item.precio);
+let promedioProductos = productosPrec.reduce((acumulador, item) => acumulador + item)
+console.log("El promedio del precio de los productos es: $" + promedioProductos / productosPrec.length);
+
+//4. Imprime en consola alfabéticamente el nombre de los productos.
+console.log("***4. Imprime en consola alfabéticamente el nombre de los productos.***")
+let nombProductos = productos.map(e => e.nombre);
+nombProductos.sort((a, b) => {
+    if(a == b) {
+        return 0;
+    }
+    if(a < b) {
+        return -1;
+    }
+    return 1;
+});
+console.log("Los nombres ordenados son: ", nombProductos)
+
+//5.Imprime en consola el producto más costoso, y redondea en un número entero.
+console.log("***5. Imprime en consola el producto más costoso, y redondea en un número entero.***")
+let mayor = 0;
+productosPrec.forEach(e => {
+    if(e > mayor) {
+        mayor = e
+    } return mayor
+});
+console.log("El producto más costoso es: " + mayor + "\nRedondeado: " + Math.round(mayor));
