@@ -126,7 +126,7 @@ const productos = [
     {
         codigo: "ACE001",
         nombre: "Laptop ACER",
-        precio: 12300
+        precio: 13200
     },
     {
         codigo: "ACE002",
@@ -136,12 +136,12 @@ const productos = [
     {
         codigo: "ACE003",
         nombre: "Computadora de escritorio HP",
-        precio: 16369
+        precio: 17896
     },
     {
         codigo: "ACE004",
         nombre: "Laptopt Gygabyte ",
-        precio: 11299
+        precio: 15999
     }
 ];
 
@@ -170,7 +170,7 @@ switch(entradaEd){
 	  break;
 }
 
-//ACTIVIDAD 7 Semana 7
+//ACTIVIDAD 8 Semana 8
 console.log("------------------ACTIVIDAD 8------------------")
 //1. Imprimir en consola solo las marcas con sus stock.
 console.log("**1. Imprimir en consola solo las marcas con sus stock.**");
