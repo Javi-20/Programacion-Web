@@ -449,7 +449,7 @@ body {
 
 .contact-in:nth-child(1) {
 	flex: 22%;
-	background: url(../img/contac1.jpg);
+	background: url(./img/contac1.jpg);
 	color: #fff;
 }
 
