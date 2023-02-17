@@ -58,15 +58,15 @@ body {
 }
 
 .bg-1 {
-	background-image: url(/img/04.png);
+	background-image: url(./img/04.png);
 }
 
 .bg-2 {
-	background-image: url(/img/02.jpg);
+	background-image: url(./img/02.jpg);
 }
 
 .bg-3 {
-	background-image: url(/img/03.jfif);
+	background-image: url(./img/03.jfif);
 }
 
 .bg-1, .bg-2, .bg-3 {
